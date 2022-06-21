@@ -1,0 +1,38 @@
+.five span{ 
+    transition:  .6s ease-in-out all;
+    position: absolute;
+    left: 40%;
+}
+
+.btn.five .icon{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: -40px;
+    transition: .6s ease-in-out all;
+    opacity: 0;
+
+}
+
+.btn.five svg{
+    color: white;
+    height: 35px;
+    width: 35px;
+}
+
+.btn.five:hover{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+.btn.five:hover .icon {
+    left: calc(100% - 50px);
+    opacity: 1;
+}
+
+.btn.five:hover span {
+ 
+    left: 20px;;
+
+}
